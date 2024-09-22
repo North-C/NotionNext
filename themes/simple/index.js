@@ -230,7 +230,7 @@ const LayoutSlug = props => {
 
         {/* 广告嵌入 */}
         {/* <AdSlot type={'in-article'} /> */}
-        <WWAds orientation='horizontal' className='w-full' />
+      {/*   <WWAds orientation='horizontal' className='w-full' /> */}
 
         <div id='article-wrapper'>
           {/* Notion文章主体 */}
@@ -241,7 +241,7 @@ const LayoutSlug = props => {
         <ShareBar post={post} />
 
         {/* 广告嵌入 */}
-        <AdSlot type={'in-article'} />
+        {/* <AdSlot type={'in-article'} /> */}
 
         {post?.type === 'Post' && (
           <>

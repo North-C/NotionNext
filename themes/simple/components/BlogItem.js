@@ -41,9 +41,9 @@ export const BlogItem = props => {
             <Link
               href={post.href}
               className='blog-item-title font-bold text-black text-2xl menu-link'>
-              {siteConfig('POST_TITLE_ICON') && (
+              {/* {siteConfig('POST_TITLE_ICON') && (
                 <NotionIcon icon={post.pageIcon} />
-              )}
+              )} */}
               {post.title}
             </Link>
           </h2>
@@ -51,14 +51,14 @@ export const BlogItem = props => {
           {/* 文章信息 */}
           <header className='mb-5 text-md text-gray-700 dark:text-gray-300 flex-wrap flex leading-6'>
             <div className='space-x-2'>
-              <span>
+             {/*  <span>
                 {' '}
                 <a
                   href={siteConfig('SIMPLE_AUTHOR_LINK', null, CONFIG)}
                   className='p-1 hover:text-red-400 transition-all duration-200'>
                   <i className='fa-regular fa-user'></i> {siteConfig('AUTHOR')}
                 </a>
-              </span>
+              </span> */}
               <span>
                 <Link
                   className='p-1 hover:text-red-400 transition-all duration-200'
@@ -111,7 +111,7 @@ export const BlogItem = props => {
           </main>
         </article>
       </div>
-
+{/* 
       <div className='block'>
         <Link
           href={post.href}
@@ -119,7 +119,7 @@ export const BlogItem = props => {
           Continue Reading{' '}
           <i className='fa-solid fa-angle-right align-middle'></i>
         </Link>
-      </div>
+      </div> */}
     </div>
   )
 }
